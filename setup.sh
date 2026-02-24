@@ -14,7 +14,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "Installing dependencies for disk.py..."
 
 apt-get update -qq
-apt-get install -y -qq python-is-python3 sg3-utils unzip wget
+apt-get install -y -qq python-is-python3 sg3-utils hdparm smartmontools unzip wget
 
 # HDSentinel
 if [ ! -x /root/HDSentinel ]; then
