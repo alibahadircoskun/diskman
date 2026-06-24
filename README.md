@@ -1,6 +1,13 @@
-# disk.py: Disk Health, Format & Progress Monitor
+# Diskman
 
-CLI tool for health checking, formatting, and monitoring disks in a multi-slot SAS backplane. Supports health scanning via HDSentinel, low-level formatting with `sg_format`, and a real-time ANSI progress monitor, all via an interactive menu or direct subcommands.
+CLI tool for disk health checks, destructive formatting workflows, and live progress monitoring on multi-slot SAS backplane systems. It is built for the kind of hardware operations work where slot mapping, safe targeting, and visibility during long-running jobs matter more than flashy abstractions.
+
+## What this proves
+
+- Linux systems work on storage-heavy hardware
+- Operational tooling for repetitive admin tasks
+- Safe handling of destructive workflows with confirmations, slot mapping, and logs
+- Practical terminal UX for long-running infrastructure jobs
 
 ---
 
@@ -36,8 +43,8 @@ Place the HDSentinel binary at `/root/HDSentinel` (or update the `HDSENTINEL` pa
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/disk-manager.git
-cd disk-manager
+git clone git@github.com:alibahadircoskun/diskman.git
+cd diskman
 sudo bash install.sh
 ```
 
